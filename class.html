@@ -7,12 +7,41 @@
   </head>
   <body>
     <h1>welcome delegate events bubble</h1>
-    <ul>
+    <ul id="list_container">
       <li class="deligate">welcome delegate1</li>
       <li class="deligate">welcome delegate2</li>
       <li class="deligate">welcome delegate3</li>
       <li class="deligate">welcome delegate4</li>
       <li class="deligate">welcome delegate5</li>
     </ul>
+    <button id="button_add">Add text</button>
+
+    <!-- javaScript section  -->
+    <script>
+      //  document.getElementsByClassName("list_container");
+      // for (let single_class of class_name) {
+      //   single_class.addEventListener("click", function (event) {
+      //     event.target.parentNode.removeChild(event.target);
+      //   });
+      // }
+
+      // removing parent child
+      document
+        .getElementById("list_container")
+        .addEventListener("click", function (event) {
+          event.target.parentNode.removeChild(event.target);
+        });
+
+      document
+        .getElementById("button_add")
+        .addEventListener("click", function () {
+          let list_container = document.getElementById("list_container");
+          console.log(list_container);
+          let crete_element = document.createElement("li");
+          console.log(crete_element);
+          crete_element.innerText = "add more sentence";
+          list_container.appendChild(crete_element);
+        });
+    </script>
   </body>
 </html>
