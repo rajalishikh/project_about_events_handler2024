@@ -1,5 +1,12 @@
-document.getElementById('delete_section').addEventListener('click',function(event){
-    console.log('delete')
-    let comment_section=document.getElementsByClassName('comment')
+document.getElementById('delete_section').addEventListener('click',function(){
+    
+    let comment_section=document.getElementById('comment section')
+    console.log(comment_section.parentElement)
+    
+    
+   
+    
+    
+    
     
 })

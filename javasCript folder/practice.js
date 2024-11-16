@@ -6,7 +6,7 @@ document.getElementById('comment_button').addEventListener('click',function(){
 let comment_section=document.getElementById('comment section');
 let create_p=document.createElement('p')
 console.log(create_p)
-create_p.innerText= text_input_value
+create_p.innerHTML= text_input_value
 comment_section.appendChild(create_p)
 
 text_input.value='';
