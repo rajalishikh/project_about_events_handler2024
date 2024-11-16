@@ -11,5 +11,9 @@ function click1(){
 }
 
 document.getElementById('button_2').addEventListener('click',function(){
-    
+    let add=document.getElementById('count_number')
+    sum=sum-1;
+    add.innerText=sum
+
+
 })
