@@ -2,11 +2,7 @@
 #count_number {
   text-align: center;
 }
-#button_1,
-#button_2 {
-  display: block;
-  margin: auto;
-}
+
 #button_1 {
   background-color: aqua;
   padding: 20px;
